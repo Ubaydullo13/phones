@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Phones</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-4">Phones</h1>
+
+        
+        <form id="form" class="row g-3 mb-5">
+                <div class="col-sm-7">
+                    <label for="phone" class="fw-bold">Phone Model*</label>
+                  <input type="text" id="name" class="form-control" placeholder="Phone Model" aria-label="Phone Model">
+                </div>
+                <div class="col-sm">
+                    <label for="price" class="fw-bold">Price*</label>
+                  <input type="number" id="price" class="form-control" placeholder="Price" aria-label="Price">
+                </div>
+                <div class="col-sm">
+                    <label for="desc" class="fw-bold">Description</label>
+                  <textarea name="description" id="desc" cols="30"></textarea>
+                </div>
+            
+              <button type="submit" class="btn btn-success">Add</button>
+        </form>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Phone Model</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider" id="wrapper">
+              
+            </tbody>
+          </table>
+          <div class="center">
+            <div class="ring"></div>
+            <span>loading...</span>
+         </div>
+    </div>
+    
+<script src="./JS/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
